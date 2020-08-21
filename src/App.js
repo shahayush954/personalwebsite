@@ -1,24 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import { ThemeProvider } from '@material-ui/core/styles';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#86b25f',
+      main: '#689f38',
+      dark: '#486f27',
+      contrastText: '#fff'
+    },
+    secondary: {
+      light: '#df6843',
+      main: '#d84315',
+      dark: '#972e0e',
+      contrastText: '#fff'
+    }
+  }
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Header />
+        <Skills />
+        <Experience />
+        <Education />
+        <AboutMe />
+        <Contact />
+      </ThemeProvider>
     </div>
   );
 }
