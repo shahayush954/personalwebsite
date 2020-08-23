@@ -1,4 +1,4 @@
-#Personal Website
+# Personal Website
 
   This is my Personal Website depicting my complete portfolio. You can even download my resume from the site. I will keep updating it for any required changes and as my profile 
   evolves. This site is built using ReactJs and Material-UI.
