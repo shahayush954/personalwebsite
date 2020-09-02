@@ -10,6 +10,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import data from '../data';
 import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 
 
 const styles = theme => ({
@@ -63,6 +64,16 @@ const styles = theme => ({
 });
 
 class Header extends Component {
+
+    componentDidMount(){
+        axios.get("https://api.ipify.org/?format=json")
+             .then((response) => {
+                axios.post(`https://us-central1-socialmedia954-8cbb0.cloudfunctions.net/api/record/${response.data.ip}`);
+             })
+             .catch(err => {
+                 console.log(err);
+             });
+    }
 
     handleLinkedInPageChange = () => {
         window.location.href=data.SocialMediaLinks.LinkedIn;
