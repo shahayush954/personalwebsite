@@ -49,7 +49,7 @@ const styles = theme => ({
         fontSize: '1.25em'
     },
     individualExperienceTitle:{
-        fontSize: '2.5em',
+        fontSize: '2.25em',
         color: '#757575',
         fonFamily: 'Oxygen, sans-serif',
         fontWeight: 400,

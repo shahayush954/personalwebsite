@@ -11,11 +11,13 @@ import machineLearningIcon from './images/machine_learning.PNG';
 import phpIcon from './images/php.png';
 import pythonIcon from './images/python-logo.png';
 import sqlIcon from './images/SQL.png';
+import mediaDotNetIcon from './images/mediadotnet-logo.png';
 import dhflIcon from './images/dhfl.jpg';
 import kkplIcon from './images/KKPL.PNG';
 import somaiyaIcon from './images/somaiya.svg';
 import myImage from './images/post1.png';
 import myResume from './docs/Ayush_Shah_Resume_2.doc'
+
 
 const data = {
     name: "Ayush Shah",
@@ -94,6 +96,19 @@ const data = {
         },
     ],
     Experience:[
+        {
+            image: mediaDotNetIcon,
+            name: 'Media.net Software Services',
+            position:'Associate Application Developer',
+            location: 'Mumbai, India',
+            duration: 'Jan 21 - Present',
+            description: [
+                'Work in teams to develop game changing, low latency, applications that will help deliver ads in few 100 milli sceonds.',
+                'Contribute in writing clean, testable and well designed code.',
+                'Contribute to the core of Ad serving with millions of serving per day.',
+                'Help in providing platform to scale Machine Learning Models.'
+            ]
+        },
         {
             image: dhflIcon,
             name: 'DHFL General Insurance',
