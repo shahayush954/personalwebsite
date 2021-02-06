@@ -16,7 +16,7 @@ import axios from 'axios';
 const styles = theme => ({
     header:{
         backgroundImage: `url(${Background})`,
-        minHeight: '800px',
+        minHeight: '45rem',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -24,18 +24,18 @@ const styles = theme => ({
     },
     name:{
         color: '#fff',
-        paddingTop: '260px'
+        paddingTop: '13rem'
     },
     title:{
         color:'#fff',
-        paddingTop: '10px'
+        paddingTop: '1rem'
     },
     icons:{
-        marginTop: '30px',
+        marginTop: '2rem',
         color: '#fff',
-        marginLeft: '10px',
-        marginRight: '10px',
-        border: '1px solid #ffffff',
+        marginLeft: '1rem',
+        marginRight: '1rem',
+        border: '0.2rem solid #ffffff',
         borderRadius: '50%',
         transition: 'all 0.3s ease-in-out',
         '&:hover':{
@@ -46,15 +46,15 @@ const styles = theme => ({
     downloadButton:{
         color: '#ffffff',
         borderColor: '#ffffff',
-        marginTop: '60px',
-        height: '90px',
-        width: '300px',
+        marginTop: '3rem',
+        height: '6rem',
+        width: '20rem',
         fontSize: '1em',
         textTransform: 'uppercase',
         fontWeight: 600,
         borderRadius: '0%',
-        border: '2px solid',
-        letterSpacing: '2px',
+        border: '0.2rem solid',
+        letterSpacing: '0.2rem',
         transition: 'all 0.3s ease-in-out',
         '&:hover':{
             backgroundColor: '#ffffff',

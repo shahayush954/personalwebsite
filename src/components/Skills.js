@@ -6,7 +6,7 @@ const styles = theme => ({
     skillsTitle:{
         fontSize: '3em',
         fontWeight: '400',
-        letterSpacing: '5px',
+        letterSpacing: '0.3rem',
         textAlign: 'center',
         color: '#689f38',
         fontVariant: 'small-caps',
