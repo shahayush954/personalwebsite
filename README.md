@@ -3,7 +3,26 @@
   This is my Personal Website depicting my complete portfolio. You can even download my resume from the site. I will keep updating it for any required changes and as my profile 
   evolves. This site is built using ReactJs and Material-UI.
   
-  For live website you can visit [here.](https://shahayush954.herokuapp.com/).
+  ##For live website you can visit [here.](https://shahayush954.herokuapp.com/).
+  
+  ##Here is an overview of the site.
+  
+  ###Header Section.
+  ![Header Image](screenshots/header.png)
+  
+  ###Skills Section
+  ![Skills image](screenshots/skills.png)
+  
+  ###Experience Section
+  ![Experience Image](screenshots/experience.png)
+  
+  ###Education Section
+  ![Education Image](screenshots/education.png)
+  
+  ###About Me Section
+  ![About me Image](screenshots/aboutme.png)
+  
+  
 
 
 
