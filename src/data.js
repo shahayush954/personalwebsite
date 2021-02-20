@@ -103,9 +103,9 @@ const data = {
             location: 'Mumbai, India',
             duration: 'Jan 21 - Present',
             description: [
-                'Work in teams to develop game changing, low latency, applications that will help deliver ads in few 100 milli sceonds.',
+                'Work in teams to develop game changing, low latency, applications that will help deliver ads in few 100 milli seconds.',
                 'Contribute in writing clean, testable and well designed code.',
-                'Contribute to the core of Ad serving with millions of serving per day.',
+                'Contribute to the core of Ad serving with millions of impressions serving per day.',
                 'Help in providing platform to scale Machine Learning Models.'
             ]
         },
