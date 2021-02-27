@@ -17,6 +17,8 @@ import kkplIcon from './images/KKPL.PNG';
 import somaiyaIcon from './images/somaiya.svg';
 import myImage from './images/post1.png';
 import myResume from './docs/Ayush_Shah_Resume_2.doc'
+import sassIcon from './images/sass.png';
+import gitIcon from './images/git.png';
 
 
 const data = {
@@ -60,6 +62,11 @@ const data = {
             alt: 'Java Logo',
         },
         {
+            name: 'Sass',
+            image: sassIcon,
+            alt: 'Sass Logo',
+        },
+        {
             name: 'PHP',
             image:phpIcon,
             alt: 'PHP Logo',
@@ -83,6 +90,11 @@ const data = {
             name: 'Firebase',
             image: firebaseIcon,
             alt: 'Firebase Logo',
+        },
+        {
+            name: 'Git',
+            image: gitIcon,
+            alt: 'Git Logo',
         },
         {
             name: 'Machine Learning',
