@@ -87,7 +87,7 @@ const styles = theme => ({
     individuaEducation:{
         display:'inline-grid',
         width: '300px',
-        height: '300px',
+        height: '330px',
         textAlign: 'left',
         padding: '20px',
         marginLeft: '15px',
