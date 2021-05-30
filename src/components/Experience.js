@@ -5,9 +5,24 @@ import data from '../data';
 
 const styles = theme => ({
     experienceContainer: {
-        padding: '0 75px',
+        padding: '0 4rem',
         background: '#f7f7f7',
-        marginBottom: '150px'
+        marginBottom: '150px',
+        [theme.breakpoints.down('xl')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '0 1rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0 1rem'
+        }
     },
     experiencePage:{
         padding: '50px 0',
@@ -27,6 +42,25 @@ const styles = theme => ({
         fontVariantNumeric: 'normal',
         fontVariantEastAsian: 'normal',
         padding: '20px 0',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '3em'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2em',
+            fontWeight: 500,
+            letterSpacing: '0.4rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '2em',
+           fontWeight: 500,
+           letterSpacing: '0.4rem'
+        }
     },
     hrLine:{
         marginTop: '-30px',
@@ -40,7 +74,22 @@ const styles = theme => ({
         textAlign: 'center',
         padding: '20px 0',
         fontSize: '1.5em',
-        color: '#757575'
+        color: '#757575',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.2rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '1.2rem'
+        }
     },
     pipe:{
         margin: '0 5px 0 5px',
@@ -49,12 +98,27 @@ const styles = theme => ({
         fontSize: '1.25em'
     },
     individualExperienceTitle:{
-        fontSize: '2.25em',
+        fontSize: '2.25rem',
         color: '#757575',
         fonFamily: 'Oxygen, sans-serif',
         fontWeight: 400,
         marginTop: '5px',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '2.25rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '2.25rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '2.25rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.7rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.7rem'
+        }
     },
     individualExperienceProfile:{
         fontsize: '1.15em',
@@ -70,12 +134,47 @@ const styles = theme => ({
             listStyle: 'none',
             borderLeft: '2px solid #aaa',
             margin: '0 0 10px -40px',
-            paddingLeft: '25px'
+            paddingLeft: '25px',
+            [theme.breakpoints.down('xl')]: {
+                paddingLeft: '25px'
+            },
+            [theme.breakpoints.down('lg')]: {
+                paddingLeft: '25px'
+            },
+            [theme.breakpoints.down('md')]: {
+                paddingLeft: '25px'
+            },
+            [theme.breakpoints.down('sm')]: {
+                paddingLeft: '15px'
+            },
+            [theme.breakpoints.down('xs')]: {
+                paddingLeft: '15px'
+            }
         }
     },
     individualExperienceImage:{
         height: '150px',
-        width: '200px'
+        width: '200px',
+        [theme.breakpoints.down('xl')]: {
+            height: '150px',
+            width: '200px'
+        },
+        [theme.breakpoints.down('lg')]: {
+            height: '150px',
+            width: '200px'
+        },
+        [theme.breakpoints.down('md')]: {
+            height: '150px',
+            width: '200px'
+        },
+        [theme.breakpoints.down('sm')]: {
+            height: '100px',
+            width: '130px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            height: '100px',
+            width: '130px'
+        }
     },
     individualExperience:{
         display: 'inline-grid',

@@ -6,7 +6,22 @@ import data from '../data';
 const styles = theme => ({
     educationContainer:{
         marginBottom: '150px',
-        padding: '0 75px'
+        padding: '0 4rem',
+        [theme.breakpoints.down('xl')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '0 4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '0 1rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            padding: '0 1rem'
+        }
     },
     educationTitle:{
         fontSize: '3em',
@@ -19,7 +34,26 @@ const styles = theme => ({
         fontVariantCaps: 'small-caps',
         fontVariantNumeric: 'normal',
         fontVariantEastAsian: 'normal',
-        padding: '20px 0'
+        padding: '20px 0',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '3em'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2em',
+            fontWeight: 500,
+            letterSpacing: '0.4rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '2em',
+           fontWeight: 500,
+           letterSpacing: '0.4rem'
+        }
     },
     hrLine:{
         marginTop: '-30px',
@@ -33,7 +67,22 @@ const styles = theme => ({
         textAlign: 'center',
         padding: '20px 0',
         fontSize: '1.5em',
-        color: '#757575'
+        color: '#757575',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.2rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '1.2rem'
+        }
     },
     individuaEducation:{
         display:'inline-grid',
@@ -44,15 +93,52 @@ const styles = theme => ({
         marginBottom: '30px',
         marginTop: '15px',
         marginRight: '15px',
-        boxShadow: '5px 5px 10px #aaa'
+        boxShadow: '5px 5px 10px #aaa',
+        [theme.breakpoints.down('xl')]: {
+            marginRight: '15px',
+            marginLeft: '15px',
+        },
+        [theme.breakpoints.down('lg')]: {
+            marginRight: '15px',
+            marginLeft: '15px',
+        },
+        [theme.breakpoints.down('md')]: {
+            marginRight: '15px',
+            marginLeft: '15px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginRight: '5px',
+            marginLeft: '5px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            marginRight: '5px',
+            marginLeft: '5px',
+        }
     },
     individuaEducationCollege:{
-        fontSize: '2em',
+        fontSize: '2rem',
         color: '#689f38',
         fonFamily: 'Oxygen, sans-serif',
         fontWeight: 300,
         marginTop: '5px',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '2rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '2rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '2rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.5rem',
+            fontWeight: 700
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.5rem',
+            fontWeight: 700
+        }
     },
     individualEducationHrLine:{
         width: '250px',

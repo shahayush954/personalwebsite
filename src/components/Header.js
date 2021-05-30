@@ -21,15 +21,48 @@ const styles = theme => ({
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        [theme.breakpoints.down('xs')]: {
+            width: '100vw',
+        }
     },
     name:{
         color: '#fff',
-        paddingTop: '13rem'
+        paddingTop: '13rem',
+        [theme.breakpoints.down('xl')]: {
+            fontSize: '6rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '6rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '5rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '4rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '3rem'
+        },
     },
     title:{
         color:'#fff',
-        paddingTop: '1rem'
-    },
+        paddingTop: '1rem',
+        [theme.breakpoints.down('xl')]: {
+            fontSize: '6rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '5rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '3rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '2rem'
+        },
+    }, 
     icons:{
         marginTop: '2rem',
         color: '#fff',
@@ -41,7 +74,29 @@ const styles = theme => ({
         '&:hover':{
             backgroundColor: '#ffffff',
             color: '#689f38'
-        }
+        },
+        [theme.breakpoints.down('xl')]: {
+            height: '5rem',
+            width: '5rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            height: '5rem',
+            width: '5rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            height: '5rem',
+            width: '5rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            height: '4rem',
+            width: '4rem',
+            fontSize: '2.5rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            height: '4rem',
+            width: '4rem',
+            fontSize: '2.5rem'
+        },
     },
     downloadButton:{
         color: '#ffffff',
@@ -59,6 +114,26 @@ const styles = theme => ({
         '&:hover':{
             backgroundColor: '#ffffff',
             color: '#689f38'
+        },
+        [theme.breakpoints.down('xl')]: {
+            height: '6rem',
+            width: '20rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            height: '6rem',
+            width: '20rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            height: '6rem',
+            width: '20rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            height: '5rem',
+            width: '16rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            height: '5rem',
+            width: '16rem',
         }
     }
 });

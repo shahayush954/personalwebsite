@@ -12,6 +12,26 @@ const styles = theme => ({
         position: 'relative',
         verticalAlign: 'top',
         border: '1px solid #689f38',
+        [theme.breakpoints.down('xl')]: {
+            marginRight: '100px',
+            marginLeft: '100px',
+        },
+        [theme.breakpoints.down('lg')]: {
+            marginRight: '100px',
+            marginLeft: '100px',
+        },
+        [theme.breakpoints.down('md')]: {
+            marginRight: '100px',
+            marginLeft: '100px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginRight: '20px',
+            marginLeft: '20px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            marginRight: '20px',
+            marginLeft: '20px',
+        }
     },
     meTitle:{
         fontSize: '3em',
@@ -25,6 +45,25 @@ const styles = theme => ({
         fontVariantNumeric: 'normal',
         fontVariantEastAsian: 'normal',
         padding: '20px 0',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '3em'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '3em'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2em',
+            fontWeight: 500,
+            letterSpacing: '0.4rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '2em',
+           fontWeight: 500,
+           letterSpacing: '0.4rem'
+        }
     },
     hrLine:{
         marginTop: '-30px',
@@ -38,7 +77,22 @@ const styles = theme => ({
         textAlign: 'center',
         padding: '20px 0',
         fontSize: '1.5em',
-        color: '#757575'
+        color: '#757575',
+        [theme.breakpoints.down('xl')]: {
+           fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.5rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.4rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.2rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+           fontSize: '1.2rem'
+        }
     },
 
     meImage:{
@@ -59,8 +113,22 @@ const styles = theme => ({
         marginInlineStart: '0px',
         marginInlineEnd: '0px',
         display: 'inline-block',
-        fontSize: '1.15em'
-
+        fontSize: '1.15rem',
+        [theme.breakpoints.down('xl')]: {
+            fontSize: '1.15rem'
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '1.15rem'
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.15rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1rem'
+        }
     },
     meImageContainer:{
         //float: 'left',
@@ -82,7 +150,7 @@ class AboutMe extends Component {
                 <p className={classes.meSubTitle}>I have been a fixer all my life, fixing all kinds of problems</p>
                 <div className={classes.meContainer}>
                 <div className={classes.meImageContainer}>
-                    <img src={data.AboutMe.image} className={classes.meImage} />
+                    <img src={data.AboutMe.image} className={classes.meImage} alt="profile" />
                 </div>
                 <div className={classes.meDescription}>
                     {
