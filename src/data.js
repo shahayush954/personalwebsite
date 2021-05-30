@@ -27,7 +27,7 @@ const data = {
     SocialMediaLinks: {
         LinkedIn: 'https://www.linkedin.com/in/ayush-shah-8a7800148/',
         GitHub: 'https://github.com/shahayush954/',
-        Instagram: 'https://www.instagram.com/ayush._.10_/?hl=en',
+        Instagram: 'https://www.instagram.com/shahayush954/?hl=en',
         Twitter: 'https://twitter.com/ayush_shah_954'
     },
     Skills : [
