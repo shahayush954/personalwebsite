@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import PersonalProjects from './components/PersonalProjects';
 import { ThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
@@ -35,6 +36,7 @@ function App() {
         <Header />
         <Skills />
         <Experience />
+        <PersonalProjects />
         <Education />
         <AboutMe />
         <Contact />
