@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import ProjectItem from './ProjectItem';
 import Carousel from 'react-material-ui-carousel'
+import data from '../data';
 
 
 const styles = theme => ({
@@ -102,12 +103,16 @@ class PersonalProjects extends Component {
         <p className={classes.projects__subtitle}>I have always liked to try my skills on a few handfull of Projects</p>
 
         <Carousel
-          animation="slide"
+          animation="fade"
           navButtonsAlwaysVisible
           timeout={1000}
+          interval={5000}
         >
-          <ProjectItem />
-          <ProjectItem />
+          {
+            data.Projects.map(eachProject => {
+              return <ProjectItem projectDetails={eachProject} />;
+            })
+          }
         </Carousel>
       </div>
     );

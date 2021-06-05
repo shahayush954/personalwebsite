@@ -151,19 +151,19 @@ class Header extends Component {
     }
 
     handleLinkedInPageChange = () => {
-        window.location.href=data.SocialMediaLinks.LinkedIn;
+        window.open(data.SocialMediaLinks.LinkedIn, '_blank');
     }
 
     handleGitHubPageChange = () => {
-        window.location.href=data.SocialMediaLinks.GitHub;
+        window.open(data.SocialMediaLinks.GitHub, '_blank');
     }
     
     handleInstagramPageChange = () => {
-        window.location.href=data.SocialMediaLinks.Instagram;
+        window.open(data.SocialMediaLinks.Instagram, '_blank');
     }
 
     handleTwitterPageChange = () => {
-        window.location.href=data.SocialMediaLinks.Twitter;
+        window.open(data.SocialMediaLinks.Twitter, '_blank');
     }
 
     render() {

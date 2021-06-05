@@ -7,8 +7,30 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const styles = theme => ({
   item__container: {
     display: 'flex',
+    margin: '0px auto',
+    boxShadow: '5px 5px 10px #aaa',
     width: '70rem',
-    height: '20rem'
+    height: '20rem',
+    [theme.breakpoints.down('xl')]: {
+      width: '70rem',
+      height: '20rem',
+    },
+    [theme.breakpoints.down('lg')]: {
+      width: '70rem',
+      height: '20rem',
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '70rem',
+      height: '20rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '35rem',
+      height: '35rem',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '35rem',
+    height: '35rem',
+    }
   },
   item__titleContainer:{
     backgroundColor: '#689f38',
@@ -24,6 +46,16 @@ const styles = theme => ({
   item__descriptionContainer:{
     flex: '4 0',
     textAlign: 'left',
+    padding: '1rem',
+    '& ul': {
+      paddingLeft: '2rem',
+      [theme.breakpoints.down('sm')]: {
+         paddingLeft: '1rem'
+      },
+      [theme.breakpoints.down('xs')]: {
+        paddingLeft: '1rem'
+      }
+    },
     '& li':{
       listStyle: 'none',
       borderLeft: '2px solid #d84315',
@@ -38,18 +70,32 @@ const styles = theme => ({
     fontVariantCaps: 'small-caps',
     fontVariantNumeric: 'normal',
     fontVariantEastAsian: 'normal',
-    marginLeft: '30px',
-    color: '#d84315'
+    marginLeft: '2rem',
+    color: '#d84315',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '1rem'
+   },
+   [theme.breakpoints.down('xs')]: {
+     marginLeft: '1rem'
+   }
   },
   item__skills:{
     padding: '0 10px',
     border: '1px solid rgb(192, 190, 190)',
+    display: 'inline-block',
     borderRadius: '4px',
-    backgroundColor: 'rgb(245, 245, 245)'
+    backgroundColor: 'rgb(245, 245, 245)',
+    margin: '3px 5px'
   },
   item__button:{
-    margin: '20px 30px',
+    margin: '20px 2rem',
     padding: '5px 15px',
+    [theme.breakpoints.down('sm')]: {
+      margin: '20px 1rem'
+   },
+   [theme.breakpoints.down('xs')]: {
+     margin: '20px 1rem'
+   },
     '& .MuiSvgIcon-root': {
       marginLeft: '10px'
     }
@@ -61,21 +107,29 @@ class ProjectItem extends Component {
     return (
       <Paper className={classes.item__container}>
         <div className={classes.item__titleContainer}>
-          <h3>Social Media: A twitter based Replica</h3>
+          <h3>{this.props.projectDetails.projectName}</h3>
         </div>
         <div className={classes.item__descriptionContainer}>
           <ul>
-            <li>Have been creating a twiiter based repplica for learning React.js, Node.js and Express.js.</li>
-            <li>The users are able to create an account, upload profile images, upload their thoughts(similar to a tweet), view others users posts, like a post, comment on a post, etc.</li>
-            <li>The system uses Google Firebase for its backend database requirements.</li>
-            <li>Created Api’s in Node.js and Express.js to fetch data from Firebase as per needs.</li>
-            <li> Developed a Frontend using React.js and integrated Redux for effective state management.</li>
+            {
+              this.props.projectDetails.projectDescription.map(description => {
+                return <li>{description}</li>;
+              })
+            }
           </ul>
           <div>
             <span className={classes.item__skillsTitle}>Skills: </span>
-            <span className={classes.item__skills}>ReactJs, Redux, NodeJs, Firebase</span>
+            {
+              this.props.projectDetails.projectSkills.map(eachSkill => {
+                return <span className={classes.item__skills}>{eachSkill}</span>;
+              })
+            }
           </div>
-          <Button variant="outlined" className={classes.item__button}>
+          <Button
+            variant="outlined"
+            className={classes.item__button}
+            onClick={() => window.open(this.props.projectDetails.githubLink, '_blank')}
+          >
             View on GitHub
             <GitHubIcon />
           </Button>

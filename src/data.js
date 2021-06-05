@@ -206,6 +206,101 @@ const data = {
         phone: "+91 9769765491",
         mail: "ayushzz459@gmail.com"
     },
+    Projects: [
+        {
+            projectName: 'Social Media: A twitter based Replica',
+            projectDescription: [
+                'Have been creating a twiiter based repplica for learning React.js, Node.js and Express.js.',
+                'The users are able to create an account, upload profile images, upload their thoughts(similar to a tweet), view others users posts, like a post, comment on a post, etc.',
+                'The system uses Google Firebase for its backend database requirements.',
+                'Created Api’s in Node.js and Express.js to fetch data from Firebase as per needs.',
+                'Developed a Frontend using React.js and integrated Redux for effective state management.',
+            ],
+            projectSkills: [
+                'ReactJs',
+                'Redux',
+                'NodeJs',
+                'Firebase',
+            ],
+            githubLink: 'https://github.com/shahayush954/SocialMedia'
+        },
+        {
+            projectName: 'Motor Self Inspection',
+            projectDescription: [
+                'Created a Model for Motor Self Inspection to automate the process of inspecting cars by Policy Makers.',
+                'Conducted testing with 2-3 Algorithms to find the best accuracy of over 65%.',
+                'Conducted Data preparation and cleansing for more than 800 images.',
+                'Developed a basic portal in Django for using the system.'
+            ],
+            projectSkills: [
+                'Python',
+                'Data Science',
+                'Image Processing'
+            ],
+            githubLink: 'https://github.com/shahayush954/Motor-Self-Inspection'
+        },
+        {
+            projectName: 'Easyfy: Milk Delivery System',
+            projectDescription: [
+                'Assisted in the creation of a Milk Delivery System through database development.',
+                'Developed backend scripts using PHP to ensure the smooth interaction of the frontend and the UI components with the database.',
+                'Developed a database design to minimize memory usage and storage requirements.',
+                'Implemented auto bill generation, order maintaining system, notifications system and user-connection system for the portal.'
+            ],
+            projectSkills: [
+                'HTML',
+                'CSS',
+                'Javascript',
+                'Php'
+            ],
+            githubLink: 'https://github.com/shahayush954/Milk-Delivery-System-Easyfy'
+        },
+        {
+            projectName: 'Labour Management System',
+            projectDescription: [
+                'Designed and developed the database of a basic job portal as a part of college project.',
+                'Developed backend scripts in PHP to assist the websites frontend components.',
+                'Worked on with PHP to integrate the backend of the website to the frontend developed by other team members.',
+                'Developed industry level documentation for the entire project.'
+            ],
+            projectSkills: [
+                'HTML',
+                'CSS',
+                'Javascript',
+                'Php'
+            ],
+            githubLink: 'https://github.com/shahayush954/Labour-Management-System'
+        },
+        {
+            projectName: 'College Canteen Website',
+            projectDescription: [
+                'Designed and developed an efficient database of an order placing system for college canteen.',
+                'Developed backend scripts in PHP to assist the website’s frontend and UI components.'
+            ],
+            projectSkills: [
+                'HTML',
+                'CSS',
+                'Javascript',
+                'Php'
+            ],
+            githubLink: 'https://github.com/shahayush954/College-Canteen-Website'
+        },
+        {
+            projectName: 'GameHubZ: E-Commerce Website',
+            projectDescription: [
+                'My first ever interaction with webite development, especially frontend development while creating my first ever frontend website',
+                'Developed a website that replicates modern day online shopping sites as a part of college project.',
+                'Used HTML and CSS for the complete design.',
+                'Used Javascript to replicate functionalities from modern sites.'
+            ],
+            projectSkills: [
+                'HTML',
+                'CSS',
+                'Javascript'
+            ],
+            githubLink: 'https://github.com/shahayush954/GameHubZ'
+        }
+    ],
     Resume: myResume
 }
 
