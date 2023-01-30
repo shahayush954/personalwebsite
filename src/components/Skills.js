@@ -45,7 +45,7 @@ const styles = theme => ({
     },
     skillsSubTitle:{
         textAlign: 'center',
-        padding: '20px 0',
+        padding: '20px 200px',
         fontSize: '1.5em',
         color: '#757575',
         [theme.breakpoints.down('xl')]: {
@@ -135,7 +135,7 @@ class Skills extends Component {
 
                 <hr className={classes.hrLine} />
 
-                <p className={classes.skillsSubTitle}>I'm pretty good at a lot of things. Here are just a few of them</p>
+                <p className={classes.skillsSubTitle}>I'm pretty good at a lot of things. Here are just a few of them. These are a combination of my expertise as well as skills with which I am familiar  </p>
 
                 {skillsMarkUp}
                 

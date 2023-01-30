@@ -16,10 +16,13 @@ import dhflIcon from './images/dhfl.jpg';
 import kkplIcon from './images/KKPL.PNG';
 import somaiyaIcon from './images/somaiya.svg';
 import myImage from './images/post1.png';
-import myResume from './docs/Ayush_Shah_Resume_2.doc'
+import myResume from './docs/AyushShah_Resume.pdf'
 import sassIcon from './images/sass.png';
 import gitIcon from './images/git.png';
-
+import hdfsIcon from './images/hadoop-hdfs-logo.png';
+import kafkaIcon from './images/kafka-logo.png';
+import druidIcon from './images/druid-logo.png';
+import vueIcon from './images/vue-logo.png';
 
 const data = {
     name: "Ayush Shah",
@@ -50,6 +53,11 @@ const data = {
             name: 'ReactJs',
             image:reactIcon,
             alt: 'ReactJs Logo',
+        },
+        {
+            name: 'Vue',
+            image:vueIcon,
+            alt: 'Vue Logo',
         },
         {
             name: 'NodeJs',
@@ -106,6 +114,21 @@ const data = {
             image: dataScienceIcon,
             alt: 'Data Science Logo',
         },
+        {
+            name: 'HDFS',
+            image: hdfsIcon,
+            alt: 'HDFS Logo',
+        },
+        {
+            name: 'Kafka',
+            image: kafkaIcon,
+            alt: 'Kafka Logo',
+        },
+        {
+            name: 'Druid',
+            image: druidIcon,
+            alt: 'Druid Logo',
+        },
     ],
     Experience:[
         {
@@ -115,10 +138,11 @@ const data = {
             location: 'Mumbai, India',
             duration: 'Jan 21 - Present',
             description: [
-                'Work in teams to develop game changing, low latency, applications that will help deliver ads in few 100 milli seconds.',
-                'Contribute in writing clean, testable and well designed code.',
-                'Contribute to the core of Ad serving with millions of impressions serving per day.',
-                'Help in providing platform to scale Machine Learning Models.'
+                'Carried out the development of a tool utilized by Data Analysts as Full Stack Developer with Automation and OptimizationTeam.',
+                'Collaborate with the Data Analysts to understand and implement their requirements.',
+                'Build interactive UI’s using ReactJs, VueJs and Redux, adhering to designs and best practices.',
+                'Create time efficient API’s using JAVA Servlets.',
+                'Write MySQL Procedures to interact with database'
             ]
         },
         {
