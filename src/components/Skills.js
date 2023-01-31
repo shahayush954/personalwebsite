@@ -49,19 +49,24 @@ const styles = theme => ({
         fontSize: '1.5em',
         color: '#757575',
         [theme.breakpoints.down('xl')]: {
-           fontSize: '1.5rem'
+            padding: '20px 200px',
+            fontSize: '1.5rem'
         },
         [theme.breakpoints.down('lg')]: {
+            padding: '20px 200px',
             fontSize: '1.5rem'
         },
         [theme.breakpoints.down('md')]: {
+            padding: '20px 150px',
             fontSize: '1.4rem'
         },
         [theme.breakpoints.down('sm')]: {
+            padding: '20px 100px',
             fontSize: '1.2rem'
         },
         [theme.breakpoints.down('xs')]: {
-           fontSize: '1.2rem'
+            padding: '20px 20px',
+            fontSize: '1.2rem'
         }
     },
     imageContainer:{
