@@ -134,10 +134,11 @@ const data = {
         {
             image: mediaDotNetIcon,
             name: 'Media.net Software Services',
-            position:'Associate Application Developer',
+            position:'Web Application Developer 2',
             location: 'Mumbai, India',
             duration: 'Jan 21 - Present',
             description: [
+                'Working on the development and enhancement of a Data Engineering project that moves data across multiple sources like Kafka, HDFS, DRUID, GCP, etc through Stream and Batch Processes',
                 'Carried out the development of a tool utilized by Data Analysts as Full Stack Developer with Automation and OptimizationTeam.',
                 'Collaborate with the Data Analysts to understand and implement their requirements.',
                 'Build interactive UI’s using ReactJs, VueJs and Redux, adhering to designs and best practices.',
