@@ -1,0 +1,81 @@
+.typing-animation {
+  overflow: hidden;
+  white-space:  nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff; }
+}
+
+.mailModal__header {
+  background: #f2f6fc;
+  padding: 5px 10px;
+  font-family: "Open Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: .875rem;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.mailModal__header .btn-close {
+  font-size: 10px;
+}
+
+.mailModal__btn {
+  padding: 5px 15px;
+  border-radius: 18px;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailModal__sendBtn {
+  background: #0b57d0;
+  color: white;
+}
+
+.mailModal__cancelBtn {
+  background: white;
+  color: #444746;
+  border: 1px solid #444746;
+}
+
+.mailModal__body {
+  padding: 0px 15px 15px 15px;
+}
+
+.mailModal__inputContainer {
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.mailModal__inputHeader {
+  flex: 3 0;
+  color: #444746;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mailModal__input {
+  flex: 15 0;
+  outline: none;
+  border: none;
+}
+
+.mailModal__input::placeholder {
+  font-size: 14px;
+}

@@ -11,6 +11,8 @@ import data from '../data';
 import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import axios from 'axios';
+import './component.css';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from 'react-bootstrap';
 
 
 const styles = theme => ({
@@ -27,7 +29,7 @@ const styles = theme => ({
     },
     name:{
         color: '#fff',
-        paddingTop: '13rem',
+        paddingTop: '10rem',
         [theme.breakpoints.down('xl')]: {
             fontSize: '6rem'
         },
@@ -47,6 +49,10 @@ const styles = theme => ({
     title:{
         color:'#fff',
         paddingTop: '1rem',
+        borderRight: '0.15em solid #fff',
+        width: 'fit-content',
+        paddingLeft: '15px',
+        paddingRight: '15px',
         [theme.breakpoints.down('xl')]: {
             fontSize: '6rem'
         },
@@ -135,10 +141,36 @@ const styles = theme => ({
             height: '5rem',
             width: '16rem',
         }
+    },
+    titleContainer: {
+        display: 'flex',
+        justifyContent: 'center'
     }
 });
 
 class Header extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            showModal: false,
+            formAddress: "",
+            toAddress: data.Contact.mail,
+            subject: "",
+        }
+    }
+
+    showEmailModal = () => {
+        this.setState({ showModal: true });
+    }
+
+    hideEmailModal = () => {
+        this.setState({ showModal: false });
+    }
+
+    hideEmailModal = () => {
+        this.setState({ showModal: false });
+    }
 
     componentDidMount(){
         axios.get("https://api.ipify.org/?format=json")
@@ -166,6 +198,13 @@ class Header extends Component {
         window.open(data.SocialMediaLinks.Twitter, '_blank');
     }
 
+    handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+
+        this.setState({ [name]: value });
+    }
+
     render() {
         const {
             classes
@@ -178,12 +217,13 @@ class Header extends Component {
                     variant="h1"
                     align="center"
             >{data.name}</Typography>
-            <Typography
-                    className={classes.title}
-                    variant="h3"
-                    align="center"
-            >{data.title}</Typography>
-                
+            <div className={classes.titleContainer}>
+                <Typography
+                        className={`${classes.title} typing-animation`}
+                        variant="h3"
+                        align="center"
+                >{data.title}</Typography>
+            </div>
                 <IconButton
                     className={classes.icons}
                     onClick={this.handleLinkedInPageChange}
@@ -234,13 +274,72 @@ class Header extends Component {
                     </Tooltip>
                 </IconButton>
                 <br />
-                <a href={data.Resume} download="AyushShah_Resume">
+                    <a href={data.Resume} download="AyushShah_Resume">
+                        <Button 
+                            variant="outlined" 
+                            className={classes.downloadButton}
+                            style={{ marginRight: '10px' }}
+                        >Download Resume</Button>
+                    </a>
                     <Button 
                         variant="outlined" 
                         className={classes.downloadButton}
-                    >Download Resume</Button>
-                </a>
+                        onClick={this.showEmailModal}
+                    >Reach out to Me</Button>
             </div>
+            <Modal
+                show={this.state.showModal}
+                onHide={this.hideEmailModal}
+                centered
+                className="mailModal__container"
+                size="lg"
+            >
+                <ModalHeader
+                    closeButton
+                    className="mailModal__header"
+                >
+                    <div className="mailModal__headerText">New Message</div>
+                </ModalHeader>
+                <ModalBody className='mailModal__body'>
+                    <div className='mailModal__inputContainer'>
+                        <div className='mailModal__inputHeader'>From</div>
+                        <input
+                            className='mailModal__input'
+                            value={this.state.formAddress}
+                            name="formAddress"
+                            placeholder='Your Email Address'
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className='mailModal__inputContainer'>
+                        <div className='mailModal__inputHeader'>To</div>
+                        <input
+                            className='mailModal__input'
+                            value={this.state.toAddress}
+                            name="toAddress"
+                            disabled
+                            style={{ cursor: 'not-allowed' }}
+                        />
+                    </div>
+                    <div className='mailModal__inputContainer'>
+                        <div className='mailModal__inputHeader'>Subject</div>
+                        <input
+                            className='mailModal__input'
+                            value={this.state.subject}
+                            name="subject"
+                            placeholder='Type a subject for your Email'
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                </ModalBody>
+                <ModalFooter className='mailModal__footer'>
+                    <button
+                        className='mailModal__btn mailModal__cancelBtn'
+                        onClick={this.hideEmailModal}
+                    >Cancel</button>
+                    <button className='mailModal__btn mailModal__sendBtn'>Send</button>
+                </ModalFooter>
+            </Modal>
             </Fragment>
         )
     }

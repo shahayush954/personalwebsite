@@ -9,9 +9,9 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import PersonalProjects from './components/PersonalProjects';
 import { ThemeProvider } from '@material-ui/core/styles';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import { createTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       light: '#86b25f',
