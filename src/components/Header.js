@@ -11,6 +11,7 @@ import data from '../data';
 import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import axios from 'axios';
+import ReactGA from "react-ga4";
 
 
 const styles = theme => ({
@@ -166,6 +167,14 @@ class Header extends Component {
         window.open(data.SocialMediaLinks.Twitter, '_blank');
     }
 
+    handleDownloadResumeClick = () => {
+        ReactGA.event({
+            category: "User Interaction",
+            action: "Button Click",
+            label: "Resume downloaded",
+        });
+    }
+
     render() {
         const {
             classes
@@ -238,6 +247,7 @@ class Header extends Component {
                     <Button 
                         variant="outlined" 
                         className={classes.downloadButton}
+                        onClick={this.handleDownloadResumeClick}
                     >Download Resume</Button>
                 </a>
             </div>
