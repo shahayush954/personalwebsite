@@ -142,13 +142,13 @@ const styles = theme => ({
 class Header extends Component {
 
     componentDidMount(){
-        axios.get("https://api.ipify.org/?format=json")
-             .then((response) => {
-                axios.post(`https://us-central1-socialmedia954-8cbb0.cloudfunctions.net/api/record/${response.data.ip}`);
-             })
-             .catch(err => {
-                 console.log(err);
-             });
+        // axios.get("https://api.ipify.org/?format=json")
+        //      .then((response) => {
+        //         axios.post(`https://us-central1-socialmedia954-8cbb0.cloudfunctions.net/api/record/${response.data.ip}`);
+        //      })
+        //      .catch(err => {
+        //          console.log(err);
+        //      });
     }
 
     handleLinkedInPageChange = () => {

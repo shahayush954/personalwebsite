@@ -5,7 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-03SXXB93QS");
+// { gaOptions: { debug_mode: true } }
+ReactGA.initialize(
+  "G-03SXXB93QS"
+);
 ReactGA.send({
   hitType: "pageview",
   page: window.location.pathname
